@@ -14,9 +14,9 @@ BOT_NAME = 'ted'
 SPIDER_MODULES = ['ted.spiders']
 NEWSPIDER_MODULE = 'ted.spiders'
 
-DOWNLOAD_DELAY = 5
+DOWNLOAD_DELAY = 3
 
-CLOSESPIDER_TIMEOUT = 40
+CLOSESPIDER_TIMEOUT = 20
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'ted (+http://www.yourdomain.com)'
 
