@@ -20,7 +20,6 @@ class GetridSpider(CrawlSpider):
     def parse_item(self, response):
 
         i = TedItem()
-        i['title'] = response.xpath('//a/text()').extract()
         i['url'] = response.xpath('//a/@href').extract()
         i['text'] = response.xpath('//span/text()').extract()
         yield i
