@@ -15,7 +15,5 @@ import scrapy
 class TedItem(scrapy.Item):
     url = scrapy.Field()
     title = scrapy.Field()
-    citations = scrapy.Field()
-
     text = scrapy.Field()
 

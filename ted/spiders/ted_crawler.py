@@ -22,7 +22,6 @@ class GetridSpider(CrawlSpider):
         i = TedItem()
         i['title'] = response.xpath('//a/text()').extract()
         i['url'] = response.xpath('//a/@href').extract()
-        i['citations'] = response.xpath('//a/@wrapper').extract()
         i['text'] = response.xpath('//span/text()').extract()
         yield i
 
